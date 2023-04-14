@@ -419,7 +419,7 @@ class _Table:
                             line = self._set_values(table_row, qi_sequence, qi_names)
                             self._debug("[DEBUG] Writing line %d from original table to anonymized "
                                         "table..." % i, _DEBUG)
-                            print(line, file=output, end="")
+                            print(line[:-2], file=output)
                             break
 
                 break
